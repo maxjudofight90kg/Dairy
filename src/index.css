@@ -1,13 +1,165 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.container{
+    display: flex;
+}
+.App {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background: #fff;
+    margin-top: 20px;
+    
+}
+  .App .wrapper {
+    box-shadow: 0 0 5px 2px grey;
+    padding: 10px;
+    width: 100%;
+    margin-right: 15px;
+    height: fit-content;
+}
+  .App .item {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: dimgrey;
+  }
+  
+  .App .item-todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+    margin-top: 10px;
+    padding: 2px;
+    border-bottom: 2px solid whitesmoke;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  .App .item-todo .item-text {
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer; 
+    padding: 0 3px;
+    font-family: 'Open Sans', sans-serif;
 }
+  
+  .App input {
+    height: 30px;
+    width: 100%;
+    border: 2px solid whitesmoke;
+    background: none;
+    padding: 0 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .App button {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background: turquoise;
+    margin-left: auto;
+  }
+  
+  .App .item-todo .item-delete {
+    width: 80px;
+    height: 30px;
+    font-size: 12px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    color: deeppink;
+    margin-left: auto;
+    background: #fff;
+  }
+  
+  .strike {
+    border-left: 2px solid red;
+    padding: 2px;
+  }
+  span {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 12px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background: turquoise;
+    margin-left: 10px;
+  }
+
+  .form-horizontal {
+    display: flex;
+  }
+
+  .dairy-wrapper {
+    width: 600px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: darkslategrey;
+    margin-right: 20px;
+  }
+
+  .dairy {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .dairy-content {
+   color: slategray;
+   font-family: 'Open Sans', sans-serif;
+  }
+
+  .comment-wrapper{
+    box-shadow: 0 0 5px 2px grey;
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 20px;
+  }
+  .comments {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: dimgrey;
+  }
+  .square-block {
+    display: flex;
+    border-bottom: 2px solid whitesmoke;
+    margin-bottom: 10px;
+  }
+  .square-block-comment {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .square {
+    min-width: 50px;
+	  height: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: grey;
+  }
+  .comment-input {
+    height: 100px;
+    width: -webkit-fill-available;
+    border: 2px solid whitesmoke;
+    background: none;
+    padding: 0 10px;
+    border-radius: 5px;
+  }
+
+  .text {
+    margin: 0px 0px 10px 0px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  
+  
+  
